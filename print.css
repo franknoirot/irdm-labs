@@ -1,0 +1,22 @@
+@import url('/main.css');
+
+@page {
+    size: letter landscape;
+    margin: 0;
+}
+
+body {
+    --bleed: .125in;
+    -webkit-print-color-adjust: exact !important;
+    --pad: calc(var(--bleed) + .25in);
+}
+
+.print-marks {
+    display: block;
+    z-index: 1000;
+    position: absolute;
+    width: calc(100vw - 2 * var(--bleed));
+    height: calc(100vh - 2 * var(--bleed));
+    transform: translate(var(--bleed), var(--bleed));
+    border: dashed 1px;
+}
