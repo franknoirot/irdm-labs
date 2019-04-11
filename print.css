@@ -10,6 +10,10 @@ body {
     --pad: calc(var(--bleed) + .25in);
 }
 
+table {
+    transform: translate(0, calc(-1.3em - var(--row-h)*2));
+}
+
 .print-marks {
     display: block;
     z-index: 1000;
